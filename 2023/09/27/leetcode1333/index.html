@@ -16,25 +16,22 @@
   <meta name="author" content="不苟星人">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目来源 ：11. 盛最多水的容器 - 力扣（LeetCode）题目 ：给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。 返回容器可以储存的最大水量。 说明：你不能倾斜容器。 输入 ： [1,8,6,2,5,4,8,3,7]   输出 ：">
+    <meta name="description" content="题目来源 ： 1333. 餐厅过滤器 - 力扣（LeetCode）  难度 ：中等   题目 ：给你一个餐馆信息数组 restaurants，其中 restaurants[i] &#x3D; [idi, ratingi, veganFriendlyi, pricei, distancei]。你必须使用以下三个过滤器来过滤这些餐馆信息。 其中素食者友好过滤器 veganFriendly 的值可以为 true">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode11">
-<meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/27/leetcode11/index.html">
+<meta property="og:title" content="leetcode1333">
+<meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/27/leetcode1333/index.html">
 <meta property="og:site_name" content="Nothing is Right">
-<meta property="og:description" content="题目来源 ：11. 盛最多水的容器 - 力扣（LeetCode）题目 ：给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。 返回容器可以储存的最大水量。 说明：你不能倾斜容器。 输入 ： [1,8,6,2,5,4,8,3,7]   输出 ：">
+<meta property="og:description" content="题目来源 ： 1333. 餐厅过滤器 - 力扣（LeetCode）  难度 ：中等   题目 ：给你一个餐馆信息数组 restaurants，其中 restaurants[i] &#x3D; [idi, ratingi, veganFriendlyi, pricei, distancei]。你必须使用以下三个过滤器来过滤这些餐馆信息。 其中素食者友好过滤器 veganFriendly 的值可以为 true">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg">
-<meta property="og:image" content="https://img1.imgtp.com/2023/09/27/23EdrEv3.jpg">
-<meta property="article:published_time" content="2023-09-27T11:31:32.000Z">
-<meta property="article:modified_time" content="2023-09-27T11:33:31.552Z">
+<meta property="article:published_time" content="2023-09-27T12:32:51.000Z">
+<meta property="article:modified_time" content="2023-09-27T12:37:51.213Z">
 <meta property="article:author" content="不苟星人">
-<meta property="article:tag" content="leetcode100">
+<meta property="article:tag" content="每日一题">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg">
   
   
   
-  <title>leetcode11 - Nothing is Right</title>
+  <title>leetcode1333 - Nothing is Right</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -229,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="leetcode11"></span>
+            <span id="subtitle" data-typed-text="leetcode1333"></span>
           
         </div>
 
@@ -240,7 +237,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-27 19:31" pubdate>
+        <time datetime="2023-09-27 20:32" pubdate>
           2023年9月27日 晚上
         </time>
       </span>
@@ -252,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          939 字
+          1.4k 字
         
       </span>
     
@@ -263,7 +260,7 @@
         
         
         
-          8 分钟
+          13 分钟
         
       </span>
     
@@ -308,29 +305,22 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">leetcode11</h1>
+            <h1 id="seo-header">leetcode1333</h1>
             
             
               <div class="markdown-body">
                 
-                <p>题目来源 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/container-with-most-water/?envType=study-plan-v2&envId=top-100-liked">11. 盛最多水的容器 - 力扣（LeetCode）</a><br>题目 ：给定一个长度为 <code>n</code> 的整数数组 <code>height</code> 。有 <code>n</code> 条垂线，第 <code>i</code> 条线的两个端点是 <code>(i, 0)</code> 和 <code>(i, height[i])</code> 。</p>
-<p>找出其中的两条线，使得它们与 <code>x</code> 轴共同构成的容器可以容纳最多的水。</p>
-<p>返回容器可以储存的最大水量。</p>
-<p><strong>说明：</strong>你不能倾斜容器。</p>
-<p>输入 ： <code>[1,8,6,2,5,4,8,3,7]</code></p>
-<img src="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" />
+                <p>题目来源 ： <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/filter-restaurants-by-vegan-friendly-price-and-distance/description/?envType=daily-question&envId=2023-09-27">1333. 餐厅过滤器 - 力扣（LeetCode）</a></p>
+<p style="color :red"> 难度 ：中等 </p>
 
-<p>输出 ： <code>49</code></p>
+<p>题目 ：给你一个餐馆信息数组 <code>restaurants</code>，其中 <code>restaurants[i] = [idi, ratingi, veganFriendlyi, pricei, distancei]</code>。你必须使用以下三个过滤器来过滤这些餐馆信息。</p>
+<p>其中素食者友好过滤器 <code>veganFriendly</code> 的值可以为 <code>true</code> 或者 <code>false</code>，如果为 <em>true</em> 就意味着你应该只包括 <code>veganFriendlyi</code> 为 true 的餐馆，为 <em>false</em> 则意味着可以包括任何餐馆。此外，我们还有最大价格 <code>maxPrice</code> 和最大距离 <code>maxDistance</code> 两个过滤器，它们分别考虑餐厅的价格因素和距离因素的最大值。</p>
+<p>过滤后返回餐馆的 ***id***，按照 <em><strong>rating</strong></em> 从高到低排序。如果 <em><strong>rating</strong></em> 相同，那么按 <em><strong>id</strong></em> 从高到低排序。简单起见， <code>veganFriendlyi</code> 和 <code>veganFriendly</code> 为 <em>true</em> 时取值为 <em>1</em>，为 <em>false</em> 时，取值为 <em>0 。</em></p>
+<p>输入：<code>restaurants = [[1,4,1,40,10],[2,8,0,50,5],[3,8,1,30,4],[4,10,0,10,3],[5,1,1,15,1]], veganFriendly = 1, maxPrice = 50, maxDistance = 10</code><br>输出：<code>[3,1,5] </code></p>
 <p>代码 ：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxArea</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; height)</span> </span>&#123;<br>        <span class="hljs-type">int</span> ans=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;height.<span class="hljs-built_in">size</span>();i++)&#123;<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=i+<span class="hljs-number">1</span>;j&lt;height.<span class="hljs-built_in">size</span>();j++)&#123;<br>                <span class="hljs-keyword">if</span>(ans&lt;(<span class="hljs-built_in">min</span>(height[i],height[j])*(j-i)))&#123;<br>                    ans=(<span class="hljs-built_in">min</span>(height[i],height[j])*(j-i));<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-comment">//需要注意这里的类型需要是static</span><br>    <span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">bool</span> <span class="hljs-title">cmp</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt; a,vector&lt;<span class="hljs-type">int</span>&gt; b)</span></span>&#123;<br>        <span class="hljs-keyword">if</span>(a[<span class="hljs-number">1</span>]&gt;b[<span class="hljs-number">1</span>])&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>        &#125;<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a[<span class="hljs-number">1</span>]==b[<span class="hljs-number">1</span>])&#123;<br>            <span class="hljs-keyword">if</span>(a[<span class="hljs-number">0</span>]&gt;b[<span class="hljs-number">0</span>])&#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span><br>                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>    &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">filterRestaurants</span><span class="hljs-params">(vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; restaurants, <span class="hljs-type">int</span> veganFriendly, <span class="hljs-type">int</span> maxPrice, <span class="hljs-type">int</span> maxDistance)</span> </span>&#123;<br>        <span class="hljs-comment">//先进行排序</span><br>        <span class="hljs-built_in">sort</span>(restaurants.<span class="hljs-built_in">begin</span>(),restaurants.<span class="hljs-built_in">end</span>(),cmp);<br>        vector&lt;<span class="hljs-type">int</span>&gt; ans;<br>          vector&lt;<span class="hljs-type">int</span>&gt; t;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;restaurants.<span class="hljs-built_in">size</span>();i++)&#123;<br>            t=restaurants[i];<br>            <span class="hljs-keyword">if</span>(veganFriendly==<span class="hljs-number">1</span>)&#123;<br>                 <span class="hljs-keyword">if</span>(t[<span class="hljs-number">2</span>]==veganFriendly&amp;&amp;t[<span class="hljs-number">3</span>]&lt;=maxPrice&amp;&amp;t[<span class="hljs-number">4</span>]&lt;=maxDistance)&#123;<br>                    ans.<span class="hljs-built_in">push_back</span>(t[<span class="hljs-number">0</span>]);<br>                &#125;<br>            &#125;<br>            <span class="hljs-keyword">else</span>&#123;<br>                 <span class="hljs-keyword">if</span>(t[<span class="hljs-number">3</span>]&lt;=maxPrice&amp;&amp;t[<span class="hljs-number">4</span>]&lt;=maxDistance)&#123;<br>                    ans.<span class="hljs-built_in">push_back</span>(t[<span class="hljs-number">0</span>]);<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
-<p>一开始第一眼，确实想到了直接套两层循环就直接得出结果了。但是结果确实可想而知，超出时间限制了…..</p>
-<img src="https://img1.imgtp.com/2023/09/27/23EdrEv3.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="leetcode11outtime.jpg" style="zoom:80%;" />
-
-<p>继续优化呀，优化呀……</p>
-<p>想啊，想啊，想啊，一根烟，一瓶水，一道力扣想一天……。</p>
-<p>终于看了K神的题解，原来用双指针就可以解决这个问题…………..</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxArea</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; height)</span> </span>&#123;<br>        <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> j=height.<span class="hljs-built_in">size</span>()<span class="hljs-number">-1</span>;<br>        <span class="hljs-type">int</span> ans=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">while</span>(i!=j)&#123;<br>            <span class="hljs-keyword">if</span>(ans&lt;(<span class="hljs-built_in">min</span>(height[i],height[j])*(j-i)))&#123;<br>                ans=<span class="hljs-built_in">min</span>(height[i],height[j])*(j-i);<br>            &#125;<br>            <span class="hljs-keyword">if</span>(height[i]&lt;height[j])&#123;<br>                i++;<br>            &#125;<br>            <span class="hljs-keyword">else</span>&#123;<br>                j--;<br>            &#125;<br>        &#125;<br>          <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<p>先排序，再遍历找满足条件的即可。</p>
 
                 
               </div>
@@ -364,7 +354,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/blog.github.io/tags/leetcode100/" class="print-no-link">#leetcode100</a>
+        <a href="/blog.github.io/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" class="print-no-link">#每日一题</a>
       
     </div>
   
@@ -376,8 +366,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>leetcode11</div>
-      <div>https://justlovedo.github.io/blog.github.io/2023/09/27/leetcode11/</div>
+      <div>leetcode1333</div>
+      <div>https://justlovedo.github.io/blog.github.io/2023/09/27/leetcode1333/</div>
     </div>
     <div class="license-meta">
       
@@ -421,18 +411,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog.github.io/2023/09/27/leetcode1333/" title="leetcode1333">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">leetcode1333</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog.github.io/2023/09/27/leetcode142/" title="leetcode142">
-                        <span class="hidden-mobile">leetcode142</span>
+                      <a href="/blog.github.io/2023/09/27/leetcode11/" title="leetcode11">
+                        <span class="hidden-mobile">leetcode11</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
