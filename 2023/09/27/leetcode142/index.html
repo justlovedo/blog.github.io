@@ -16,24 +16,24 @@
   <meta name="author" content="不苟星人">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目来源 ： 141. 环形链表 - 力扣（LeetCode） 题目 ： 给你一个链表的头节点 head ，判断链表中是否有环。 如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。 如果链表中存在">
+    <meta name="description" content="题目来源 ：142. 环形链表 II - 力扣（LeetCode） 题目 ：给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。 如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode141">
-<meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/26/leetcode141/index.html">
+<meta property="og:title" content="leetcode142">
+<meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/27/leetcode142/index.html">
 <meta property="og:site_name" content="Nothing is Right">
-<meta property="og:description" content="题目来源 ： 141. 环形链表 - 力扣（LeetCode） 题目 ： 给你一个链表的头节点 head ，判断链表中是否有环。 如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。 如果链表中存在">
+<meta property="og:description" content="题目来源 ：142. 环形链表 II - 力扣（LeetCode） 题目 ：给定一个链表的头节点  head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。 如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。如果 pos 是 -1，则在该链表">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png">
-<meta property="article:published_time" content="2023-09-26T12:21:37.000Z">
-<meta property="article:modified_time" content="2023-09-27T10:53:30.492Z">
+<meta property="og:image" content="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png">
+<meta property="article:published_time" content="2023-09-27T10:58:48.000Z">
+<meta property="article:modified_time" content="2023-09-27T11:01:09.640Z">
 <meta property="article:author" content="不苟星人">
 <meta property="article:tag" content="leetcode100">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png">
+<meta name="twitter:image" content="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png">
   
   
   
-  <title>leetcode141 - Nothing is Right</title>
+  <title>leetcode142 - Nothing is Right</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -228,7 +228,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="leetcode141"></span>
+            <span id="subtitle" data-typed-text="leetcode142"></span>
           
         </div>
 
@@ -239,8 +239,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-26 20:21" pubdate>
-          2023年9月26日 晚上
+        <time datetime="2023-09-27 18:58" pubdate>
+          2023年9月27日 晚上
         </time>
       </span>
     
@@ -251,7 +251,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          696 字
+          724 字
         
       </span>
     
@@ -262,7 +262,7 @@
         
         
         
-          6 分钟
+          7 分钟
         
       </span>
     
@@ -307,22 +307,22 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">leetcode141</h1>
+            <h1 id="seo-header">leetcode142</h1>
             
             
               <div class="markdown-body">
                 
-                <p>题目来源 ： <a target="_blank" rel="noopener" href="https://leetcode.cn/problems/linked-list-cycle/?envType=study-plan-v2&envId=top-100-liked">141. 环形链表 - 力扣（LeetCode）</a></p>
-<p>题目 ： 给你一个链表的头节点 <code>head</code> ，判断链表中是否有环。</p>
-<p>如果链表中有某个节点，可以通过连续跟踪 <code>next</code> 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 <code>pos</code> 来表示链表尾连接到链表中的位置（索引从 0 开始）。<strong>注意：<code>pos</code> 不作为参数进行传递</strong> 。仅仅是为了标识链表的实际情况。</p>
-<p><em>如果链表中存在环</em> ，则返回 <code>true</code> 。 否则，返回 <code>false</code> 。</p>
-<p>输入 ： <img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" /></p>
-<p><code>head = [3,2,0,-4], pos = 1</code></p>
-<p>输出 <code>true</code></p>
-<p>代码 ：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * Definition for singly-linked list.</span><br><span class="hljs-comment"> * struct ListNode &#123;</span><br><span class="hljs-comment"> *     int val;</span><br><span class="hljs-comment"> *     ListNode *next;</span><br><span class="hljs-comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="hljs-comment"> * &#125;;</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    map&lt;ListNode *,<span class="hljs-type">int</span>&gt; HashTable;<br>    <span class="hljs-function"><span class="hljs-type">bool</span> <span class="hljs-title">hasCycle</span><span class="hljs-params">(ListNode *head)</span> </span>&#123;<br>        ListNode *p1=head;<br>        <span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>)&#123;<br>            <span class="hljs-keyword">if</span>(p1==<span class="hljs-literal">NULL</span>)&#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span>&#123;<br>                <span class="hljs-keyword">if</span>(HashTable[p1]==<span class="hljs-number">1</span>)&#123;<br>                    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>                &#125;<br>                HashTable[p1]=<span class="hljs-number">1</span>;<br>                p1=p1-&gt;next;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+                <p>题目来源 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/linked-list-cycle-ii/?envType=study-plan-v2&envId=top-100-liked">142. 环形链表 II - 力扣（LeetCode）</a></p>
+<p>题目 ：给定一个链表的头节点  <code>head</code> ，返回链表开始入环的第一个节点。 <em>如果链表无环，则返回 <code>null</code>。</em></p>
+<p>如果链表中有某个节点，可以通过连续跟踪 <code>next</code> 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 <code>pos</code> 来表示链表尾连接到链表中的位置（<strong>索引从 0 开始</strong>）。如果 <code>pos</code> 是 <code>-1</code>，则在该链表中没有环。<strong>注意：<code>pos</code> 不作为参数进行传递</strong>，仅仅是为了标识链表的实际情况。<strong>不允许修改</strong> 链表。</p>
+<p>输入 ： <code>head = [3,2,0,-4], pos = 1</code></p>
+<img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" />
 
-<p>用哈希表…哈希表真是个好东西！</p>
+<p>输出 ： <code>返回索引为 1 的链表节点</code></p>
+<p>代码 ：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * Definition for singly-linked list.</span><br><span class="hljs-comment"> * struct ListNode &#123;</span><br><span class="hljs-comment"> *     int val;</span><br><span class="hljs-comment"> *     ListNode *next;</span><br><span class="hljs-comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="hljs-comment"> * &#125;;</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    map&lt;ListNode *,<span class="hljs-type">int</span>&gt; HashTable;<br>    <span class="hljs-function">ListNode *<span class="hljs-title">detectCycle</span><span class="hljs-params">(ListNode *head)</span> </span>&#123;<br>        ListNode *p1=head;<br>        <span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>)&#123;<br>            <span class="hljs-keyword">if</span>(p1==<span class="hljs-literal">NULL</span>)&#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-literal">NULL</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span>&#123;<br>                <span class="hljs-keyword">if</span>(HashTable[p1]==<span class="hljs-number">1</span>)&#123;<br>                    <span class="hljs-keyword">return</span> p1;<br>                &#125;<br>                HashTable[p1]=<span class="hljs-number">1</span>;<br>                p1=p1-&gt;next;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<p>继续使用哈希表……</p>
 
                 
               </div>
@@ -368,8 +368,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>leetcode141</div>
-      <div>https://justlovedo.github.io/blog.github.io/2023/09/26/leetcode141/</div>
+      <div>leetcode142</div>
+      <div>https://justlovedo.github.io/blog.github.io/2023/09/27/leetcode142/</div>
     </div>
     <div class="license-meta">
       
@@ -381,7 +381,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年9月26日</div>
+          <div>2023年9月27日</div>
         </div>
       
       
@@ -413,9 +413,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog.github.io/2023/09/27/leetcode142/" title="leetcode142">
+                      <a href="/blog.github.io/2023/09/27/leetcode11/" title="leetcode11">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">leetcode142</span>
+                        <span class="hidden-mobile">leetcode11</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -423,8 +423,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog.github.io/2023/09/26/leetcode169/" title="leetcode169">
-                        <span class="hidden-mobile">leetcode169</span>
+                      <a href="/blog.github.io/2023/09/26/leetcode141/" title="leetcode141">
+                        <span class="hidden-mobile">leetcode141</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
