@@ -4,6 +4,56 @@
   
   
   <entry>
+    <title>leetcode2tree</title>
+    <link href="/blog.github.io/2023/09/29/leetcode2tree/"/>
+    <url>/blog.github.io/2023/09/29/leetcode2tree/</url>
+    
+    <content type="html"><![CDATA[<p>题目来源 ： 二叉树的简单题 </p><ol><li><h2 id="94-二叉树的中序遍历-力扣（LeetCode）"><a href="#94-二叉树的中序遍历-力扣（LeetCode）" class="headerlink" title="94. 二叉树的中序遍历 - 力扣（LeetCode）"></a><a href="https://leetcode.cn/problems/binary-tree-inorder-traversal/?envType=study-plan-v2&envId=top-100-liked">94. 二叉树的中序遍历 - 力扣（LeetCode）</a></h2></li></ol><p>题目 ：给定一个二叉树的根节点 <code>root</code> ，返回 <em>它的 <strong>中序</strong> 遍历</em> </p><p>输入 ： <img src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" alt="img" style="zoom:80%;" /></p><p>输入  ：<code>root = [1,null,2,3]</code></p><p>输出 ：  <code>[1,3,2]</code></p><p>代码 ：中序遍历，左子树根右子树，用递归即可</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    vector&lt;<span class="hljs-type">int</span>&gt; ans;<br>   <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">FindAns</span><span class="hljs-params">(TreeNode *root)</span></span>&#123;<br>       <span class="hljs-comment">//root为空</span><br>       <span class="hljs-keyword">if</span>(root)&#123;<br>           <span class="hljs-built_in">FindAns</span>(root-&gt;left);<br>           ans.<span class="hljs-built_in">push_back</span>(root-&gt;val);<br>           <span class="hljs-built_in">FindAns</span>(root-&gt;right);<br>       &#125;<br>   &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">inorderTraversal</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>      <span class="hljs-built_in">FindAns</span>(root);<br>      <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure><ol start="2"><li><h2 id="104-二叉树的最大深度-力扣（LeetCode）"><a href="#104-二叉树的最大深度-力扣（LeetCode）" class="headerlink" title="104. 二叉树的最大深度 - 力扣（LeetCode）"></a><a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/?envType=study-plan-v2&envId=top-100-liked">104. 二叉树的最大深度 - 力扣（LeetCode）</a></h2></li></ol><p>题目 ： 给定一个二叉树 <code>root</code> ，返回其最大深度。</p><p>二叉树的 <strong>最大深度</strong> 是指从根节点到最远叶子节点的最长路径上的节点数。</p><img src="https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg" alt="img" style="zoom:80%;" /><p>输入 ： <code>root = [3,9,20,null,null,15,7]</code></p><p>输出 ： <code>3</code></p><p>代码 ：当前二叉树的深度等于左子树的深度和右子树的深度的最大值加一</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">depth</span><span class="hljs-params">(TreeNode *root)</span></span>&#123;<br>        <span class="hljs-keyword">if</span>(root)&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-built_in">max</span>(<span class="hljs-built_in">depth</span>(root-&gt;left),<span class="hljs-built_in">depth</span>(root-&gt;right))+<span class="hljs-number">1</span>;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxDepth</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">depth</span>(root);<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure><ol start="3"><li><h2 id="226-翻转二叉树-力扣（LeetCode）"><a href="#226-翻转二叉树-力扣（LeetCode）" class="headerlink" title="226. 翻转二叉树 - 力扣（LeetCode）"></a><a href="https://leetcode.cn/problems/invert-binary-tree/?envType=study-plan-v2&envId=top-100-liked">226. 翻转二叉树 - 力扣（LeetCode）</a></h2></li></ol><p>题目 ： 给你一棵二叉树的根节点 <code>root</code> ，翻转这棵二叉树，并返回其根节点。</p><img src="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg" alt="img" style="zoom:80%;" /><p>输入 ： <code>root = [4,2,7,1,3,6,9]</code></p><p>输出 ： <code>[4,7,2,9,6,3,1]</code></p><p>代码  ： 从二叉树的上至下利用中间值t进行递归翻转。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">TreeNode* <span class="hljs-title">invertTree</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span>(root)&#123;<br>            TreeNode *t=root-&gt;left;<br>            root-&gt;left=root-&gt;right;<br>            root-&gt;right=t;<br>            <span class="hljs-built_in">invertTree</span>(root-&gt;left);<br>            <span class="hljs-built_in">invertTree</span>(root-&gt;right);<br>        &#125;<br>        <span class="hljs-keyword">return</span> root;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>leetcode100</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>leetcode121</title>
+    <link href="/blog.github.io/2023/09/29/leetcode121/"/>
+    <url>/blog.github.io/2023/09/29/leetcode121/</url>
+    
+    <content type="html"><![CDATA[<p>题目来源  ： <a href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/?envType=study-plan-v2&envId=top-100-liked">121. 买卖股票的最佳时机 - 力扣（LeetCode）</a></p><p>题目 ： 给定一个数组 <code>prices</code> ，它的第 <code>i</code> 个元素 <code>prices[i]</code> 表示一支给定股票第 <code>i</code> 天的价格。</p><p>你只能选择 <strong>某一天</strong> 买入这只股票，并选择在 <strong>未来的某一个不同的日子</strong> 卖出该股票。设计一个算法来计算你所能获取的最大利润。</p><p>返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 <code>0</code> </p><p>输入 ： <code>[7,1,5,3,6,4]</code></p><p>输出  :  <code>5</code></p><p>代码 ： </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxProfit</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; prices)</span> </span>&#123;<br>       <span class="hljs-comment">//如果股票在第i天卖出，则一定会在第i天之前的价格最少的一天卖出</span><br>       <span class="hljs-type">int</span> ans=<span class="hljs-number">0</span>;<br>       <span class="hljs-type">int</span> min=<span class="hljs-number">10001</span>;<br>       <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;prices.<span class="hljs-built_in">size</span>();i++)&#123;<br>           <span class="hljs-keyword">if</span>(min&gt;prices[i])&#123;<br>               min=prices[i];<br>           &#125;<br>           <span class="hljs-keyword">if</span>(ans&lt;(prices[i]-min))&#123;<br>               ans=(prices[i]-min);<br>           &#125;<br>       &#125;<br>       <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br><br></code></pre></td></tr></table></figure><p>思路就是利用贪心的思想，如果股票在第 <code>i</code> 天卖出，那么可以肯定的是股票购买的价格一定是第 <code>i</code> 天以前的价格最低的那天，所以通过一层循环，既可以得出答案。在循环的过程中不断进行更新最小的价格和答案。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>leetcode100</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>leetcode605</title>
     <link href="/blog.github.io/2023/09/29/leetcode605/"/>
     <url>/blog.github.io/2023/09/29/leetcode605/</url>

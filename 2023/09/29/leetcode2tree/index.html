@@ -16,22 +16,26 @@
   <meta name="author" content="不苟星人">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目来源 ：605. 种花问题 - 力扣（LeetCode） 难度 ： 简单   题目 ： 假设有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花不能种植在相邻的地块上，它们会争夺水源，两者都会死去。 给你一个整数数组 flowerbed 表示花坛，由若干 0 和 1 组成，其中 0 表示没种植花，1 表示种植了花。另有一个数 n ，能否在不打破种植规则的情况下种入 n 朵花？能则返回">
+    <meta name="description" content="题目来源 ： 二叉树的简单题   94. 二叉树的中序遍历 - 力扣（LeetCode）  题目 ：给定一个二叉树的根节点 root ，返回 它的 中序 遍历  输入 ：  输入  ：root &#x3D; [1,null,2,3] 输出 ：  [1,3,2] 代码 ：中序遍历，左子树根右子树，用递归即可 12345678910111213141516class Solution &amp;#123;public:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode605">
-<meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/29/leetcode605/index.html">
+<meta property="og:title" content="leetcode2tree">
+<meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/29/leetcode2tree/index.html">
 <meta property="og:site_name" content="Nothing is Right">
-<meta property="og:description" content="题目来源 ：605. 种花问题 - 力扣（LeetCode） 难度 ： 简单   题目 ： 假设有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花不能种植在相邻的地块上，它们会争夺水源，两者都会死去。 给你一个整数数组 flowerbed 表示花坛，由若干 0 和 1 组成，其中 0 表示没种植花，1 表示种植了花。另有一个数 n ，能否在不打破种植规则的情况下种入 n 朵花？能则返回">
+<meta property="og:description" content="题目来源 ： 二叉树的简单题   94. 二叉树的中序遍历 - 力扣（LeetCode）  题目 ：给定一个二叉树的根节点 root ，返回 它的 中序 遍历  输入 ：  输入  ：root &#x3D; [1,null,2,3] 输出 ：  [1,3,2] 代码 ：中序遍历，左子树根右子树，用递归即可 12345678910111213141516class Solution &amp;#123;public:">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-29T03:05:05.000Z">
-<meta property="article:modified_time" content="2023-09-29T03:12:15.464Z">
+<meta property="og:image" content="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg">
+<meta property="og:image" content="https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg">
+<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg">
+<meta property="article:published_time" content="2023-09-29T06:49:15.000Z">
+<meta property="article:modified_time" content="2023-09-29T06:49:50.296Z">
 <meta property="article:author" content="不苟星人">
-<meta property="article:tag" content="每日一题">
+<meta property="article:tag" content="leetcode100">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg">
   
   
   
-  <title>leetcode605 - Nothing is Right</title>
+  <title>leetcode2tree - Nothing is Right</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -226,7 +230,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="leetcode605"></span>
+            <span id="subtitle" data-typed-text="leetcode2tree"></span>
           
         </div>
 
@@ -237,8 +241,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-29 11:05" pubdate>
-          2023年9月29日 上午
+        <time datetime="2023-09-29 14:49" pubdate>
+          2023年9月29日 下午
         </time>
       </span>
     
@@ -249,7 +253,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.2k 字
         
       </span>
     
@@ -260,7 +264,7 @@
         
         
         
-          12 分钟
+          10 分钟
         
       </span>
     
@@ -305,21 +309,48 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">leetcode605</h1>
+            <h1 id="seo-header">leetcode2tree</h1>
             
             
               <div class="markdown-body">
                 
-                <p>题目来源 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/can-place-flowers/">605. 种花问题 - 力扣（LeetCode）</a></p>
-<p style="color :red;">难度 ： 简单 </p>
+                <p>题目来源 ： 二叉树的简单题 </p>
+<ol>
+<li><h2 id="94-二叉树的中序遍历-力扣（LeetCode）"><a href="#94-二叉树的中序遍历-力扣（LeetCode）" class="headerlink" title="94. 二叉树的中序遍历 - 力扣（LeetCode）"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/binary-tree-inorder-traversal/?envType=study-plan-v2&envId=top-100-liked">94. 二叉树的中序遍历 - 力扣（LeetCode）</a></h2></li>
+</ol>
+<p>题目 ：给定一个二叉树的根节点 <code>root</code> ，返回 <em>它的 <strong>中序</strong> 遍历</em> </p>
+<p>输入 ： <img src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" /></p>
+<p>输入  ：<code>root = [1,null,2,3]</code></p>
+<p>输出 ：  <code>[1,3,2]</code></p>
+<p>代码 ：中序遍历，左子树根右子树，用递归即可</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    vector&lt;<span class="hljs-type">int</span>&gt; ans;<br>   <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">FindAns</span><span class="hljs-params">(TreeNode *root)</span></span>&#123;<br>       <span class="hljs-comment">//root为空</span><br>       <span class="hljs-keyword">if</span>(root)&#123;<br>           <span class="hljs-built_in">FindAns</span>(root-&gt;left);<br>           ans.<span class="hljs-built_in">push_back</span>(root-&gt;val);<br>           <span class="hljs-built_in">FindAns</span>(root-&gt;right);<br>       &#125;<br>   &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">inorderTraversal</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>      <span class="hljs-built_in">FindAns</span>(root);<br>      <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
-<p>题目 ： 假设有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花不能种植在相邻的地块上，它们会争夺水源，两者都会死去。</p>
-<p>给你一个整数数组 <code>flowerbed</code> 表示花坛，由若干 <code>0</code> 和 <code>1</code> 组成，其中 <code>0</code> 表示没种植花，<code>1</code> 表示种植了花。另有一个数 <code>n</code> ，能否在不打破种植规则的情况下种入 <code>n</code> 朵花？能则返回 <code>true</code> ，不能则返回 <code>false</code> 。</p>
-<p>输入 ： <code>flowerbed = [1,0,0,0,1], n = 1</code></p>
-<p>输出  ： <code>true</code></p>
-<p>代码 ： </p>
-<p>先对花园的<code>首</code> 、<code>尾</code> 进行判断，之后在内部数0的个数，如果两个<code>1</code> 之间是奇数个<code>0</code> 那么就是<code>count/2</code> 如果是偶数个<code>0</code> 那么就是 <code>count/2-1</code> 。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">bool</span> <span class="hljs-title">canPlaceFlowers</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; flowerbed, <span class="hljs-type">int</span> n)</span> </span>&#123;<br>        <span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> count = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">bool</span> start = <span class="hljs-literal">false</span>;<br>        <span class="hljs-keyword">if</span> (flowerbed[<span class="hljs-number">0</span>] == <span class="hljs-number">0</span> &amp;&amp; flowerbed.<span class="hljs-built_in">size</span>() &gt; <span class="hljs-number">1</span> &amp;&amp; flowerbed[<span class="hljs-number">1</span>] == <span class="hljs-number">0</span>) &#123;<br>            n -= <span class="hljs-number">1</span>;<br>            flowerbed[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (flowerbed.<span class="hljs-built_in">size</span>() &gt; <span class="hljs-number">1</span> &amp;&amp; flowerbed[flowerbed.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>] == <span class="hljs-number">0</span> &amp;&amp; flowerbed[flowerbed.<span class="hljs-built_in">size</span>() - <span class="hljs-number">2</span>] == <span class="hljs-number">0</span>) &#123;<br>            n -= <span class="hljs-number">1</span>;<br>            flowerbed[flowerbed.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>] = <span class="hljs-number">1</span>;<br>        &#125;<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (flowerbed.<span class="hljs-built_in">size</span>() == <span class="hljs-number">1</span>) &#123;<br>            <span class="hljs-keyword">if</span> ((flowerbed[<span class="hljs-number">0</span>] == <span class="hljs-number">0</span> &amp;&amp; n == <span class="hljs-number">1</span>) || n == <span class="hljs-number">0</span>) &#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span> &#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; flowerbed.<span class="hljs-built_in">size</span>(); i++) &#123;<br>            <span class="hljs-keyword">if</span> (flowerbed[i] == <span class="hljs-number">1</span> &amp;&amp; start == <span class="hljs-literal">false</span>) &#123;<br>                count = <span class="hljs-number">0</span>;<br>                start = <span class="hljs-literal">true</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (flowerbed[i] == <span class="hljs-number">0</span>&amp;&amp;start==<span class="hljs-literal">true</span>) &#123;<br>                count++;<br>            &#125;<br>            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (flowerbed[i] == <span class="hljs-number">1</span> &amp;&amp; start == <span class="hljs-literal">true</span>) &#123;<br>                <span class="hljs-keyword">if</span> (count &gt; <span class="hljs-number">2</span>) &#123;<br>                    <span class="hljs-keyword">if</span> (count % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>) &#123;<br>                        n -= (count / <span class="hljs-number">2</span> - <span class="hljs-number">1</span>);<br>                    &#125;<br>                    <span class="hljs-keyword">else</span> &#123;<br>                        n -= (count / <span class="hljs-number">2</span>);<br>                    &#125;<br>                &#125;<br>                start = <span class="hljs-literal">false</span>;<br>                i -= <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (n &lt;= <span class="hljs-number">0</span>) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>        &#125;<br>        <span class="hljs-keyword">else</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+
+<ol start="2">
+<li><h2 id="104-二叉树的最大深度-力扣（LeetCode）"><a href="#104-二叉树的最大深度-力扣（LeetCode）" class="headerlink" title="104. 二叉树的最大深度 - 力扣（LeetCode）"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/?envType=study-plan-v2&envId=top-100-liked">104. 二叉树的最大深度 - 力扣（LeetCode）</a></h2></li>
+</ol>
+<p>题目 ： 给定一个二叉树 <code>root</code> ，返回其最大深度。</p>
+<p>二叉树的 <strong>最大深度</strong> 是指从根节点到最远叶子节点的最长路径上的节点数。</p>
+<img src="https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" />
+
+<p>输入 ： <code>root = [3,9,20,null,null,15,7]</code></p>
+<p>输出 ： <code>3</code></p>
+<p>代码 ：当前二叉树的深度等于左子树的深度和右子树的深度的最大值加一</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">depth</span><span class="hljs-params">(TreeNode *root)</span></span>&#123;<br>        <span class="hljs-keyword">if</span>(root)&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-built_in">max</span>(<span class="hljs-built_in">depth</span>(root-&gt;left),<span class="hljs-built_in">depth</span>(root-&gt;right))+<span class="hljs-number">1</span>;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxDepth</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">depth</span>(root);<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+
+
+<ol start="3">
+<li><h2 id="226-翻转二叉树-力扣（LeetCode）"><a href="#226-翻转二叉树-力扣（LeetCode）" class="headerlink" title="226. 翻转二叉树 - 力扣（LeetCode）"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/invert-binary-tree/?envType=study-plan-v2&envId=top-100-liked">226. 翻转二叉树 - 力扣（LeetCode）</a></h2></li>
+</ol>
+<p>题目 ： 给你一棵二叉树的根节点 <code>root</code> ，翻转这棵二叉树，并返回其根节点。</p>
+<img src="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" />
+
+<p>输入 ： <code>root = [4,2,7,1,3,6,9]</code></p>
+<p>输出 ： <code>[4,7,2,9,6,3,1]</code></p>
+<p>代码  ： 从二叉树的上至下利用中间值t进行递归翻转。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">TreeNode* <span class="hljs-title">invertTree</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span>(root)&#123;<br>            TreeNode *t=root-&gt;left;<br>            root-&gt;left=root-&gt;right;<br>            root-&gt;right=t;<br>            <span class="hljs-built_in">invertTree</span>(root-&gt;left);<br>            <span class="hljs-built_in">invertTree</span>(root-&gt;right);<br>        &#125;<br>        <span class="hljs-keyword">return</span> root;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -353,7 +384,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/blog.github.io/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/" class="print-no-link">#每日一题</a>
+        <a href="/blog.github.io/tags/leetcode100/" class="print-no-link">#leetcode100</a>
       
     </div>
   
@@ -365,8 +396,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>leetcode605</div>
-      <div>https://justlovedo.github.io/blog.github.io/2023/09/29/leetcode605/</div>
+      <div>leetcode2tree</div>
+      <div>https://justlovedo.github.io/blog.github.io/2023/09/29/leetcode2tree/</div>
     </div>
     <div class="license-meta">
       
@@ -410,18 +441,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog.github.io/2023/09/29/leetcode121/" title="leetcode121">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">leetcode121</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog.github.io/2023/09/28/leetcode15/" title="leetcode15">
-                        <span class="hidden-mobile">leetcode15</span>
+                      <a href="/blog.github.io/2023/09/29/leetcode121/" title="leetcode121">
+                        <span class="hidden-mobile">leetcode121</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
