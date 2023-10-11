@@ -315,7 +315,7 @@
                 <p>题目来源 ：</p>
 <p style="color :red;">难度 ：简单</p>
 <p>题目 ：给你单链表的头节点 <code>head</code> ，请你反转链表，并返回反转后的链表。</p>
-<img src="https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom: 80%;" />
+<img src="https://assets.leetcode.com/uploads/2021/02/19/rev1ex1.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom: 80%;">
 <p>输入 ：<code>head = [1,2,3,4,5]</code></p>
 <p>输出：<code>[5,4,3,2,1]</code></p>
 <p>思路 1：用三个指向链表的指针即可以完成这个过程。但是代码出现一个问题，很奇怪的问题。循环结束之后<code>p</code>指向的是倒数第二个节点，<code>q</code> 指向的是最后一个结点，但是我发现如果直接将 <code>q-&gt;next=p</code> 会出错。想到为什么会出错了，因为如果针对的是两个结点的链表将<code>p-&gt;next=q</code>那么会造成一个循环链表这样一定会出现错误。</p>
