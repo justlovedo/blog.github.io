@@ -16,12 +16,12 @@
   <meta name="author" content="不苟星人">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目来源 ：160. 相交链表 - 力扣（LeetCode） 难度 ：简单  题目 ： 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。   题目数据 保证 整个链式结构中不存在环。 注意，函数返回结果后，链表必须 保持其原始结构 。 自定义评测： 评测系统 的输入如下（你设计的程序 不适用 此输入）：">
+    <meta name="description" content="题目来源 ：160. 相交链表 - 力扣（LeetCode） 难度 ：简单 题目 ： 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。  题目数据 保证 整个链式结构中不存在环。 注意，函数返回结果后，链表必须 保持其原始结构 。 自定义评测： 评测系统 的输入如下（你设计的程序 不适用 此输入）：  in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode160">
 <meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/26/leetcode160/index.html">
 <meta property="og:site_name" content="Nothing is Right">
-<meta property="og:description" content="题目来源 ：160. 相交链表 - 力扣（LeetCode） 难度 ：简单  题目 ： 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。   题目数据 保证 整个链式结构中不存在环。 注意，函数返回结果后，链表必须 保持其原始结构 。 自定义评测： 评测系统 的输入如下（你设计的程序 不适用 此输入）：">
+<meta property="og:description" content="题目来源 ：160. 相交链表 - 力扣（LeetCode） 难度 ：简单 题目 ： 给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 null 。  题目数据 保证 整个链式结构中不存在环。 注意，函数返回结果后，链表必须 保持其原始结构 。 自定义评测： 评测系统 的输入如下（你设计的程序 不适用 此输入）：  in">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png">
 <meta property="og:image" content="https://assets.leetcode.com/uploads/2021/03/05/160_example_1_1.png">
@@ -313,12 +313,10 @@
             
               <div class="markdown-body">
                 
-                <p>题目来源 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&envId=top-100-liked">160. 相交链表 - 力扣（LeetCode）</a></p>
+                <p>题目来源 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=study-plan-v2&amp;envId=top-100-liked">160. 相交链表 - 力扣（LeetCode）</a></p>
 <p style="color :red;">难度 ：简单</p>
-
 <p>题目 ： 给你两个单链表的头节点 <code>headA</code> 和 <code>headB</code> ，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 <code>null</code> 。</p>
 <img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png" srcset="/blog.github.io/img/loading.gif" lazyload alt="160_statement.png (742×241) (leetcode-cn.com)" style="zoom:80%;" />
-
 <p>题目数据 <strong>保证</strong> 整个链式结构中不存在环。</p>
 <p><strong>注意</strong>，函数返回结果后，链表必须 <strong>保持其原始结构</strong> 。</p>
 <p><strong>自定义评测：</strong></p>
@@ -333,10 +331,9 @@
 <p>评测系统将根据这些输入创建链式数据结构，并将两个头节点 <code>headA</code> 和 <code>headB</code> 传递给你的程序。如果程序能够正确返回相交节点，那么你的解决方案将被 <strong>视作正确答案</strong> 。</p>
 <p>输入 ：<code>intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3</code></p>
 <p><a target="_blank" rel="noopener" href="https://assets.leetcode.com/uploads/2018/12/13/160_example_1.png"><img src="https://assets.leetcode.com/uploads/2021/03/05/160_example_1_1.png" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" /></a></p>
-<p>输出：<code>Intersected at &#39;8&#39;</code></p>
+<p>输出：<code>Intersected at '8'</code></p>
 <p>思路 ：这个题是很简单的，直接对两个链表进行遍历，找到相等的点即可。但是一开始确实一直出错，请看代码。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">ListNode *<span class="hljs-title">getIntersectionNode</span><span class="hljs-params">(ListNode *headA, ListNode *headB)</span> </span>&#123;<br>        ListNode *p=headA;<br>        ListNode *q=headB;<br>        <span class="hljs-keyword">while</span>(p!=<span class="hljs-literal">NULL</span>&amp;&amp;q!=<span class="hljs-literal">NULL</span>)&#123;<br>            q=headB;<br>            <span class="hljs-keyword">while</span>(q!=<span class="hljs-literal">NULL</span>)&#123;<br>                <span class="hljs-keyword">if</span>(p==q)&#123;<br>                    <span class="hljs-keyword">return</span> p;<br>                &#125;<br>                q=q-&gt;next;<br>            &#125;<br>            p=p-&gt;next;<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">NULL</span>;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-
 <p>不知道你们看出来没有，其实错误点在于第一层循环居然用的两个链表都是非空的情形，这这个错误导致最后只进行了一层循环。</p>
 <p>改成 <code>while(p!=NULL)</code>即可。</p>
 <p>代码 2： 其实这个也是按照于链表的遍历，但是相较于第一种偏向于同时进行循环遍历，即不再是嵌套循环而是<code>两个圈子一起循环</code>。</p>

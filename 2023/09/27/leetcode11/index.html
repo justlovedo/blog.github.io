@@ -16,12 +16,12 @@
   <meta name="author" content="不苟星人">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目来源 ：11. 盛最多水的容器 - 力扣（LeetCode）题目 ：给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。 返回容器可以储存的最大水量。 说明：你不能倾斜容器。 输入 ： [1,8,6,2,5,4,8,3,7]   输出 ：">
+    <meta name="description" content="题目来源 ：11. 盛最多水的容器 - 力扣（LeetCode） 题目 ：给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。 返回容器可以储存的最大水量。 **说明：**你不能倾斜容器。 输入 ： [1,8,6,2,5,4,8,3,7]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode11">
 <meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/27/leetcode11/index.html">
 <meta property="og:site_name" content="Nothing is Right">
-<meta property="og:description" content="题目来源 ：11. 盛最多水的容器 - 力扣（LeetCode）题目 ：给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。 返回容器可以储存的最大水量。 说明：你不能倾斜容器。 输入 ： [1,8,6,2,5,4,8,3,7]   输出 ：">
+<meta property="og:description" content="题目来源 ：11. 盛最多水的容器 - 力扣（LeetCode） 题目 ：给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。 找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。 返回容器可以储存的最大水量。 **说明：**你不能倾斜容器。 输入 ： [1,8,6,2,5,4,8,3,7]">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg">
 <meta property="og:image" content="https://img1.imgtp.com/2023/09/27/23EdrEv3.jpg">
@@ -252,7 +252,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          939 字
+          934 字
         
       </span>
     
@@ -313,23 +313,21 @@
             
               <div class="markdown-body">
                 
-                <p>题目来源 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/container-with-most-water/?envType=study-plan-v2&envId=top-100-liked">11. 盛最多水的容器 - 力扣（LeetCode）</a><br>题目 ：给定一个长度为 <code>n</code> 的整数数组 <code>height</code> 。有 <code>n</code> 条垂线，第 <code>i</code> 条线的两个端点是 <code>(i, 0)</code> 和 <code>(i, height[i])</code> 。</p>
+                <p>题目来源 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/container-with-most-water/?envType=study-plan-v2&amp;envId=top-100-liked">11. 盛最多水的容器 - 力扣（LeetCode）</a><br>
+题目 ：给定一个长度为 <code>n</code> 的整数数组 <code>height</code> 。有 <code>n</code> 条垂线，第 <code>i</code> 条线的两个端点是 <code>(i, 0)</code> 和 <code>(i, height[i])</code> 。</p>
 <p>找出其中的两条线，使得它们与 <code>x</code> 轴共同构成的容器可以容纳最多的水。</p>
 <p>返回容器可以储存的最大水量。</p>
-<p><strong>说明：</strong>你不能倾斜容器。</p>
+<p>**说明：**你不能倾斜容器。</p>
 <p>输入 ： <code>[1,8,6,2,5,4,8,3,7]</code></p>
 <img src="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" />
-
 <p>输出 ： <code>49</code></p>
 <p>代码 ：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxArea</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; height)</span> </span>&#123;<br>        <span class="hljs-type">int</span> ans=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;height.<span class="hljs-built_in">size</span>();i++)&#123;<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=i+<span class="hljs-number">1</span>;j&lt;height.<span class="hljs-built_in">size</span>();j++)&#123;<br>                <span class="hljs-keyword">if</span>(ans&lt;(<span class="hljs-built_in">min</span>(height[i],height[j])*(j-i)))&#123;<br>                    ans=(<span class="hljs-built_in">min</span>(height[i],height[j])*(j-i));<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-
-<p>一开始第一眼，确实想到了直接套两层循环就直接得出结果了。但是结果确实可想而知，超出时间限制了…..</p>
+<p>一开始第一眼，确实想到了直接套两层循环就直接得出结果了。但是结果确实可想而知，超出时间限制了…</p>
 <img src="https://img1.imgtp.com/2023/09/27/23EdrEv3.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="leetcode11outtime.jpg" style="zoom:80%;" />
-
-<p>继续优化呀，优化呀……</p>
-<p>想啊，想啊，想啊，一根烟，一瓶水，一道力扣想一天……。</p>
-<p>终于看了K神的题解，原来用双指针就可以解决这个问题…………..</p>
+<p>继续优化呀，优化呀…</p>
+<p>想啊，想啊，想啊，一根烟，一瓶水，一道力扣想一天…。</p>
+<p>终于看了K神的题解，原来用双指针就可以解决这个问题…</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxArea</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; height)</span> </span>&#123;<br>        <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> j=height.<span class="hljs-built_in">size</span>()<span class="hljs-number">-1</span>;<br>        <span class="hljs-type">int</span> ans=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">while</span>(i!=j)&#123;<br>            <span class="hljs-keyword">if</span>(ans&lt;(<span class="hljs-built_in">min</span>(height[i],height[j])*(j-i)))&#123;<br>                ans=<span class="hljs-built_in">min</span>(height[i],height[j])*(j-i);<br>            &#125;<br>            <span class="hljs-keyword">if</span>(height[i]&lt;height[j])&#123;<br>                i++;<br>            &#125;<br>            <span class="hljs-keyword">else</span>&#123;<br>                j--;<br>            &#125;<br>        &#125;<br>          <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
                 
