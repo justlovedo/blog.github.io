@@ -16,26 +16,22 @@
   <meta name="author" content="不苟星人">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目来源 ： 二叉树的简单题   94. 二叉树的中序遍历 - 力扣（LeetCode）  题目 ：给定一个二叉树的根节点 root ，返回 它的 中序 遍历  输入 ：  输入  ：root &#x3D; [1,null,2,3] 输出 ：  [1,3,2] 代码 ：中序遍历，左子树根右子树，用递归即可 12345678910111213141516class Solution &amp;#123;public:">
+    <meta name="description" content="时隔将近半个月又开始写博客了，这半个月倒是经历了挺多的事情。 1：数学建模国赛出成绩了—省一结果确实是没想到，不仅没想到还有点意外，论文的完整性确实有的。但是论文的算法确实不多，仅仅的包括了数学规划、聚类模型、OLS最小二乘法。这个成绩很意外的，因为一般数模竞赛需要三个人，我们这次基本我负责的是编程和建模、另一个数学专业的学姐负责的是写论文，其余的那个人（隐身了….）。 自己在这几天其实做的也不算">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode2tree">
-<meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/09/29/leetcode2tree/index.html">
+<meta property="og:title" content="10月上半月汇总">
+<meta property="og:url" content="https://justlovedo.github.io/blog.github.io/2023/10/11/10%E6%9C%88%E4%B8%8A%E5%8D%8A%E6%9C%88%E6%B1%87%E6%80%BB/index.html">
 <meta property="og:site_name" content="Nothing is Right">
-<meta property="og:description" content="题目来源 ： 二叉树的简单题   94. 二叉树的中序遍历 - 力扣（LeetCode）  题目 ：给定一个二叉树的根节点 root ，返回 它的 中序 遍历  输入 ：  输入  ：root &#x3D; [1,null,2,3] 输出 ：  [1,3,2] 代码 ：中序遍历，左子树根右子树，用递归即可 12345678910111213141516class Solution &amp;#123;public:">
+<meta property="og:description" content="时隔将近半个月又开始写博客了，这半个月倒是经历了挺多的事情。 1：数学建模国赛出成绩了—省一结果确实是没想到，不仅没想到还有点意外，论文的完整性确实有的。但是论文的算法确实不多，仅仅的包括了数学规划、聚类模型、OLS最小二乘法。这个成绩很意外的，因为一般数模竞赛需要三个人，我们这次基本我负责的是编程和建模、另一个数学专业的学姐负责的是写论文，其余的那个人（隐身了….）。 自己在这几天其实做的也不算">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg">
-<meta property="article:published_time" content="2023-09-29T06:49:15.000Z">
-<meta property="article:modified_time" content="2023-09-29T06:49:50.296Z">
+<meta property="article:published_time" content="2023-10-11T12:06:10.000Z">
+<meta property="article:modified_time" content="2023-10-11T14:42:26.797Z">
 <meta property="article:author" content="不苟星人">
-<meta property="article:tag" content="leetcode100">
+<meta property="article:tag" content="半月汇总">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg">
   
   
   
-  <title>leetcode2tree - Nothing is Right</title>
+  <title>10月上半月汇总 - Nothing is Right</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -230,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="leetcode2tree"></span>
+            <span id="subtitle" data-typed-text="10月上半月汇总"></span>
           
         </div>
 
@@ -241,8 +237,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-29 14:49" pubdate>
-          2023年9月29日 下午
+        <time datetime="2023-10-11 20:06" pubdate>
+          2023年10月11日 晚上
         </time>
       </span>
     
@@ -253,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          658 字
         
       </span>
     
@@ -264,7 +260,7 @@
         
         
         
-          10 分钟
+          6 分钟
         
       </span>
     
@@ -309,48 +305,47 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">leetcode2tree</h1>
+            <h1 id="seo-header">10月上半月汇总</h1>
             
             
               <div class="markdown-body">
                 
-                <p>题目来源 ： 二叉树的简单题 </p>
-<ol>
-<li><h2 id="94-二叉树的中序遍历-力扣（LeetCode）"><a href="#94-二叉树的中序遍历-力扣（LeetCode）" class="headerlink" title="94. 二叉树的中序遍历 - 力扣（LeetCode）"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/binary-tree-inorder-traversal/?envType=study-plan-v2&envId=top-100-liked">94. 二叉树的中序遍历 - 力扣（LeetCode）</a></h2></li>
-</ol>
-<p>题目 ：给定一个二叉树的根节点 <code>root</code> ，返回 <em>它的 <strong>中序</strong> 遍历</em> </p>
-<p>输入 ： <img src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" /></p>
-<p>输入  ：<code>root = [1,null,2,3]</code></p>
-<p>输出 ：  <code>[1,3,2]</code></p>
-<p>代码 ：中序遍历，左子树根右子树，用递归即可</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    vector&lt;<span class="hljs-type">int</span>&gt; ans;<br>   <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">FindAns</span><span class="hljs-params">(TreeNode *root)</span></span>&#123;<br>       <span class="hljs-comment">//root为空</span><br>       <span class="hljs-keyword">if</span>(root)&#123;<br>           <span class="hljs-built_in">FindAns</span>(root-&gt;left);<br>           ans.<span class="hljs-built_in">push_back</span>(root-&gt;val);<br>           <span class="hljs-built_in">FindAns</span>(root-&gt;right);<br>       &#125;<br>   &#125;<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">inorderTraversal</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>      <span class="hljs-built_in">FindAns</span>(root);<br>      <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-
-
-
-<ol start="2">
-<li><h2 id="104-二叉树的最大深度-力扣（LeetCode）"><a href="#104-二叉树的最大深度-力扣（LeetCode）" class="headerlink" title="104. 二叉树的最大深度 - 力扣（LeetCode）"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/?envType=study-plan-v2&envId=top-100-liked">104. 二叉树的最大深度 - 力扣（LeetCode）</a></h2></li>
-</ol>
-<p>题目 ： 给定一个二叉树 <code>root</code> ，返回其最大深度。</p>
-<p>二叉树的 <strong>最大深度</strong> 是指从根节点到最远叶子节点的最长路径上的节点数。</p>
-<img src="https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" />
-
-<p>输入 ： <code>root = [3,9,20,null,null,15,7]</code></p>
-<p>输出 ： <code>3</code></p>
-<p>代码 ：当前二叉树的深度等于左子树的深度和右子树的深度的最大值加一</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">depth</span><span class="hljs-params">(TreeNode *root)</span></span>&#123;<br>        <span class="hljs-keyword">if</span>(root)&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-built_in">max</span>(<span class="hljs-built_in">depth</span>(root-&gt;left),<span class="hljs-built_in">depth</span>(root-&gt;right))+<span class="hljs-number">1</span>;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">maxDepth</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-built_in">depth</span>(root);<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-
-
-
-<ol start="3">
-<li><h2 id="226-翻转二叉树-力扣（LeetCode）"><a href="#226-翻转二叉树-力扣（LeetCode）" class="headerlink" title="226. 翻转二叉树 - 力扣（LeetCode）"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/invert-binary-tree/?envType=study-plan-v2&envId=top-100-liked">226. 翻转二叉树 - 力扣（LeetCode）</a></h2></li>
-</ol>
-<p>题目 ： 给你一棵二叉树的根节点 <code>root</code> ，翻转这棵二叉树，并返回其根节点。</p>
-<img src="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg" srcset="/blog.github.io/img/loading.gif" lazyload alt="img" style="zoom:80%;" />
-
-<p>输入 ： <code>root = [4,2,7,1,3,6,9]</code></p>
-<p>输出 ： <code>[4,7,2,9,6,3,1]</code></p>
-<p>代码  ： 从二叉树的上至下利用中间值t进行递归翻转。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">TreeNode* <span class="hljs-title">invertTree</span><span class="hljs-params">(TreeNode* root)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span>(root)&#123;<br>            TreeNode *t=root-&gt;left;<br>            root-&gt;left=root-&gt;right;<br>            root-&gt;right=t;<br>            <span class="hljs-built_in">invertTree</span>(root-&gt;left);<br>            <span class="hljs-built_in">invertTree</span>(root-&gt;right);<br>        &#125;<br>        <span class="hljs-keyword">return</span> root;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+                <p>时隔将近半个月又开始写博客了，这半个月倒是经历了挺多的事情。</p>
+<h4 id="1：数学建模国赛出成绩了—省一"><a href="#1：数学建模国赛出成绩了—省一" class="headerlink" title="1：数学建模国赛出成绩了—省一"></a>1：数学建模国赛出成绩了—省一</h4><p>结果确实是没想到，不仅没想到还有点意外，论文的完整性确实有的。但是论文的算法确实不多，仅仅的包括了数学规划、聚类模型、OLS最小二乘法。这个成绩很意外的，因为一般数模竞赛需要三个人，我们这次基本我负责的是编程和建模、另一个数学专业的学姐负责的是写论文，其余的那个人（隐身了….）。</p>
+<p>自己在这几天其实做的也不算好，每日最爱干的事情还是睡觉…..，建模也没建的多好。没做好的原因可以很坦诚地说，原因是因为自己一开始也没想着能得奖…….，唉，如果当初花时间做一下相关性分析，把论文的进一步完整性提高上去就好了。不过后悔也没用了</p>
+<p>但是结果确实很意外，下次参加美赛的时候一定要把握好机会，不要浪费时间，We are all dying！希望美赛能获得M奖吧。</p>
+<h4 id="2：微信小程序开发—还差一部分"><a href="#2：微信小程序开发—还差一部分" class="headerlink" title="2：微信小程序开发—还差一部分"></a>2：微信小程序开发—还差一部分</h4><p>一个国庆，整整一个国庆，基本处于一种近乎癫狂的状态，一直在做….，不过好在现在做的差不多了（还差一些关键的部分）。</p>
+<p>这部分的感触很深的事情就是，不要一直把事情放脑子里，应该做下去而不是只是在脑子里构想，有一些事情开始做才会有效，一直在脑子里想是没有用处的。</p>
+<hr>
+<h3 id="下半个月的计划"><a href="#下半个月的计划" class="headerlink" title="下半个月的计划"></a>下半个月的计划</h3><p>很重要的一件事，希望能把每日使用手机的时间降到2小时</p>
+<table>
+<thead>
+<tr>
+<th>事情</th>
+<th>记录状况</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>操作系统</td>
+<td>希望能把rust学完，博客记录</td>
+</tr>
+<tr>
+<td>计算机网络</td>
+<td>上这个课的时候不要睡觉吧，能跟上就好。</td>
+</tr>
+<tr>
+<td>英语方面</td>
+<td>希望每天能写一个博客记录英语学习状况</td>
+</tr>
+<tr>
+<td>算法方面</td>
+<td>希望这十五天之后能把leetcode刷到100题</td>
+</tr>
+<tr>
+<td>数据库方面</td>
+<td>希望能刷20-30道SQL语句</td>
+</tr>
+</tbody></table>
 
                 
               </div>
@@ -369,7 +364,7 @@
     
       <span class="category-chain">
         
-  <a href="/blog.github.io/categories/%E7%AE%97%E6%B3%95/" class="category-chain-item">算法</a>
+  <a href="/blog.github.io/categories/%E6%97%A5%E5%B8%B8/" class="category-chain-item">日常</a>
   
   
 
@@ -384,7 +379,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/blog.github.io/tags/leetcode100/" class="print-no-link">#leetcode100</a>
+        <a href="/blog.github.io/tags/%E5%8D%8A%E6%9C%88%E6%B1%87%E6%80%BB/" class="print-no-link">#半月汇总</a>
       
     </div>
   
@@ -396,8 +391,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>leetcode2tree</div>
-      <div>https://justlovedo.github.io/blog.github.io/2023/09/29/leetcode2tree/</div>
+      <div>10月上半月汇总</div>
+      <div>https://justlovedo.github.io/blog.github.io/2023/10/11/10月上半月汇总/</div>
     </div>
     <div class="license-meta">
       
@@ -409,7 +404,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年9月29日</div>
+          <div>2023年10月11日</div>
         </div>
       
       
@@ -441,18 +436,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog.github.io/2023/10/11/10%E6%9C%88%E4%B8%8A%E5%8D%8A%E6%9C%88%E6%B1%87%E6%80%BB/" title="10月上半月汇总">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">10月上半月汇总</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog.github.io/2023/09/29/leetcode121/" title="leetcode121">
-                        <span class="hidden-mobile">leetcode121</span>
+                      <a href="/blog.github.io/2023/09/29/leetcode2tree/" title="leetcode2tree">
+                        <span class="hidden-mobile">leetcode2tree</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
