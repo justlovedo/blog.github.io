@@ -4,6 +4,44 @@
   
   
   <entry>
+    <title>听力日常-10-30</title>
+    <link href="/blog.github.io/2023/10/30/2023-10-30/"/>
+    <url>/blog.github.io/2023/10/30/2023-10-30/</url>
+    
+    <content type="html"><![CDATA[<h1>2023-10-30</h1><h2 id="Listen-In">Listen In</h2><h3 id="passage2">passage2</h3><p>生单词</p><p><code>supermarket</code>  和 <code>department store</code>  居然不一样…，奇怪。</p><h2 id="Unit-Test">Unit Test</h2><p><code>preferences</code> : 偏好、喜好</p><p><code>disrepair</code> ： 年久失修</p><p><code> Neutral</code>  ：中立的</p><p>不错不错，五个短对话，对了四个。</p><p><code>disastrous.</code> ： 灾难性的</p><p><code>disgusting</code> ： 厌恶的</p><p><code>indefinitely</code> ： 无限期的</p><hr><p>难不成今天运气好了，长对话也都对了…，感觉除了细节听不懂，选项倒是能感觉到的。</p><p>因为有早八，所以只能晚上听了。差不多听了四十分钟了。</p><p><img src="https://ooo.0x0.ooo/2023/10/30/ONb8xq.jpg" alt="ONb8xq.jpg"><br><img src="https://ooo.0x0.ooo/2023/10/30/ONb28v.jpg" alt="ONb28v.jpg"></p><p>先到这了</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>英语</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>听力</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/blog.github.io/2023/10/29/%E7%AE%97%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
+    <url>/blog.github.io/2023/10/29/%E7%AE%97%E6%B3%95%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<h1>算法记录</h1><h2 id="第二周">第二周</h2><p>1：带空格读取string</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-built_in">getline</span>(cin,str);<span class="hljs-comment">//此时str可以带空格</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>听力日常-10-29</title>
     <link href="/blog.github.io/2023/10/29/2023-10-29/"/>
     <url>/blog.github.io/2023/10/29/2023-10-29/</url>
